@@ -4,14 +4,68 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/font-awesome.css" />
-        <link rel="stylesheet" href="css/bootstrap.css" />
-        <link rel="stylesheet" href="css/styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/font-awesome.css" />
+        <link rel="stylesheet" href="./css/bootstrap.css" />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="icon" href="./assets/icons/" />
         <title>Money Flow</title>
     </head>
     <body>
-        
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/script.js"></script>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+            <div class="container">
+                <a 
+                    href="./index.html" 
+                    class="navabar-brand d-flex align-items-center text-decoration-none gap-2"
+                >
+                    <img src="./assets/icons/logo_white.png" alt="logo" width="60px">
+                    <h3 class="text-light text-nowrap fw-semibold m-0">MoneyFlow</h3>
+                </a>
+
+                <!-- Dropdown menu for small screen -->
+                <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div 
+                    id="navbarNavDropdown" 
+                    class="collapse navbar-collapse"
+                >
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link fw-semibold">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#features" class="nav-link fw-semibold">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/about.html" class="nav-link fw-semibold">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/help.html" class="nav-link fw-semibold">Help</a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="./pages/register.html"
+                                class="nav-link btn btn-outline-light fw-semibold px-4 mx-4"
+                            >
+                                Sign Up
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+        </nav>
+
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/script.js"></script>
     </body>
 </html>
