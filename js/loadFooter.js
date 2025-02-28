@@ -1,7 +1,3 @@
-const getPath = (path) => {
-    return window.location.pathname.includes('/pages/') ? `../${path}` : `./${path}`;
-};
-    
 const loadFooter = async () => {
     const response = await fetch(getPath('components/footer.html'));
     const footerHTML = await response.text();
