@@ -23,7 +23,7 @@
     </head>
     <body>
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-background">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-scroll-background-sm">
             <div class="container">
                 <a 
                     href="./index.html" 
@@ -71,6 +71,44 @@
                 </div>
             </div>    
         </nav>
+
+        <!-- Header -->
+        <header class="header bg-primary">
+            <div class="hero text-white pt-7 pb-3">
+                <div class="container-xl">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="text-container px-3 pe-md-0 d-flex flex-column justify-content-center h-100 mb-4">
+                                <h1 class="display-3 fw-bold">Money Manager</h1>
+                                <p class="lead">
+                                    <!-- The easiest way to manage personal finances -->
+                                    Take full control of your finances with ease. 
+                                    Track your income, manage expenses, and grow 
+                                    your savings — all in one smart and intuitive web app.
+                                </p>
+                                <div class="form-container text-center">
+                                    <button 
+                                        onclick="window.location.href='./pages/register.html'" 
+                                        class="btn btn-dark text-white w-75"
+                                    >
+                                        Let's Start
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="image-container my-5 px-3 px-md-0 ps-md-0 pe-md-3">
+                                <img 
+                                    src="./assets/images/header.png" 
+                                    alt="header image" 
+                                    class="img-fluid"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
         <script src="./js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
