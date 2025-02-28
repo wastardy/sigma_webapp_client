@@ -2,14 +2,14 @@
 $font-family-sans-serif: 'Open Sans', sans-serif;
 
 // Colors
-$primary: #6d74ec;
-$secondary: #0a2467;
-$dark: #0e0c31;
-$light: #fcfcfc;
+$primary: #6faafd;
+$secondary: #1086ee;
+$dark: #2b3041;
+$light: #f3f6f9;
 
 // Navbar
 $navbar-padding-y: 1rem;
-$navbar-dark-color: #fff;
+$navbar-dark-color: $light;
 $navbar-dark-hover-color: $secondary;
 
 // Buttons

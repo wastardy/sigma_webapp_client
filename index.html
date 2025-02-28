@@ -11,12 +11,19 @@
         <link rel="stylesheet" href="./css/font-awesome.css" />
         <link rel="stylesheet" href="./css/bootstrap.css" />
         <link rel="stylesheet" href="./css/styles.css" />
-        <link rel="icon" href="./assets/icons/" />
+        <link rel="icon" href="./assets/icons/logo_white.ico" />
         <title>Money Flow</title>
+        <style>
+            body {
+                min-height: 200vh;
+            }
+        </style>
+        <script defer src="./js/navbar.js"></script>
+        <script defer src="./js/script.js"></script>
     </head>
     <body>
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-background">
             <div class="container">
                 <a 
                     href="./index.html" 
@@ -44,7 +51,7 @@
                             <a href="./index.html" class="nav-link fw-semibold">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#features" class="nav-link fw-semibold">Features</a>
+                            <a href="./index.html#features" class="nav-link fw-semibold">Features</a>
                         </li>
                         <li class="nav-item">
                             <a href="./pages/about.html" class="nav-link fw-semibold">About</a>
@@ -55,7 +62,7 @@
                         <li class="nav-item">
                             <a
                                 href="./pages/register.html"
-                                class="nav-link btn btn-outline-light fw-semibold px-4 mx-4"
+                                class="nav-link btn btn-outline-light fw-semibold px-4 mt-4 mt-lg-0 mx-0 ms-lg-4"
                             >
                                 Sign Up
                             </a>
@@ -64,8 +71,6 @@
                 </div>
             </div>    
         </nav>
-
         <script src="./js/bootstrap.bundle.min.js"></script>
-        <script src="./js/script.js"></script>
     </body>
 </html>

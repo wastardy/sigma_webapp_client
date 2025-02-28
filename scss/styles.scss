@@ -1,0 +1,21 @@
+.navbar {
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar .btn-outline-light {
+    border: 2px solid var(--bs-light);
+}
+
+.navbar .btn-outline-light:hover {
+    color: var(--bs-dark);
+}
+
+.navbar-background {
+    background: var(--bs-dark);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-scroll-background {
+    background: #2b3041e4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
