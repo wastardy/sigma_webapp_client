@@ -1,17 +1,28 @@
+//#region Functions
 const userScroll = () => {
     const navbar = document.querySelector('.navbar');
+    if (!navbar) return;
 
     window.addEventListener('scroll', () => {
         if (window.scrollY > 55) {
             navbar.classList.remove('navbar-scroll-background');
             navbar.classList.add('navbar-background');
-        }
-        else {
+        } else {
             navbar.classList.add('navbar-scroll-background');
             navbar.classList.remove('navbar-background');
         }
     });
 }
+
+const observer = new MutationObserver((mutations, obs) => {
+    const navbar = document.querySelector('.navbar');
+    if (navbar) {
+        userScroll();
+        obs.disconnect();
+    }
+});
+
+observer.observe(document.body, { childList: true, subtree: true });
 
 function clickOutsideNavbar(event) {
     const navbarToggler = document.querySelector('.navbar-toggler');
@@ -25,7 +36,9 @@ function clickOutsideNavbar(event) {
         navbarToggler.click();
     }
 }
+//#endregion
 
-// Event Listeners
-document.addEventListener('DOMContentLoaded', userScroll);
+//#region Event Listeners
+// document.addEventListener('DOMContentLoaded', userScroll);
 document.addEventListener('click', clickOutsideNavbar);
+//#endregion
