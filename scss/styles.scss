@@ -16,8 +16,14 @@
 }
 
 .navbar-scroll-background {
-    background: #2b3041e4;
+    // background: #003366e6;
+    background: #004080e8;
+    // background: #4169e1e8;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.nav-link:hover {
+    color: #1a79ff;
 }
 
 @media (min-width: 320px) and (max-width: 992px) {
