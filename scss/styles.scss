@@ -7,7 +7,7 @@
 }
 
 .navbar .btn-outline-light:hover {
-    color: var(--bs-dark);
+    color: var(--bs-secondary);
 }
 
 .navbar-background {
@@ -18,4 +18,11 @@
 .navbar-scroll-background {
     background: #2b3041e4;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+    .navbar-scroll-background-sm {
+        background: #2b3041e4;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    }
 }
