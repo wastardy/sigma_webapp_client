@@ -33,12 +33,12 @@
             </div>
         </header>
 
-        <section class="py-7 bg-light">
+        <section class="py-5 py-md-7 bg-light" style="overflow-x: hidden;">
             <div class="row">
-                <div class="col-lg-10 offset-lg-1">
+                <div class="col-10 offset-1">
                     <div class="card form-card bg-primary text-light rounded-5 border-0 card-shadow">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 d-none d-md-block">
                                 <img 
                                     src="../assets/images/register_login.png" 
                                     alt="image" 
@@ -46,86 +46,85 @@
                                 >
                             </div>
                             
-                            <div class="col-md-6">
-                                <h2 class="text-center fw-bold">Create an Account</h2>
-                                <form action="#" method="POST">
-                                    <div class="mb-4">
-                                        <label for="username" class="form-label">
-                                            Username
-                                        </label>
-                                        <input 
-                                            type="text" 
-                                            id="username" 
-                                            name="username" 
-                                            class="form-control rounded-4" 
-                                            required
-                                        />
-                                    </div>
+                            <div class="col-md-6 px-4 py-3 p-md-5">
+                                <div class="card rounded-5 bg-light">
+                                    <div class="card-body">
+                                        <h2 class="text-center text-dark fw-bold mt-3 mb-5">
+                                            Create an Account
+                                        </h2>
+                                        <form action="#" method="POST">
+                                            <div class="mb-4">
+                                                <input 
+                                                    type="text" 
+                                                    id="username" 
+                                                    name="username" 
+                                                    class="form-control border-3 border-dark bg-light text-dark fw-semibold rounded-4" 
+                                                    placeholder="Username"
+                                                    required
+                                                />
+                                            </div>
 
-                                    <div class="mb-4">
-                                        <label for="firstname" class="form-label">
-                                            First Name
-                                        </label>
-                                        <input 
-                                            type="text" 
-                                            id="firstname" 
-                                            name="firstname" 
-                                            class="form-control rounded-4" 
-                                            required
-                                        />
-                                    </div>
+                                            <div class="mb-4">
+                                                <input 
+                                                    type="text" 
+                                                    id="firstname" 
+                                                    name="firstname" 
+                                                    class="form-control border-3 border-dark bg-light text-dark fw-semibold rounded-4" 
+                                                    placeholder="First Name"
+                                                    required
+                                                />
+                                            </div>
 
-                                    <div class="mb-4">
-                                        <label for="lastname" class="form-label">
-                                            Last Name
-                                        </label>
-                                        <input 
-                                            type="text" 
-                                            id="lastname" 
-                                            name="lastname" 
-                                            class="form-control rounded-4" 
-                                            required
-                                        />
-                                    </div>
+                                            <div class="mb-4">
+                                                <input 
+                                                    type="text" 
+                                                    id="lastname" 
+                                                    name="lastname" 
+                                                    class="form-control border-3 border-dark bg-light text-dark fw-semibold rounded-4" 
+                                                    placeholder="Last Name"
+                                                    required
+                                                />
+                                            </div>
 
-                                    <div class="mb-4">
-                                        <label for="password" class="form-label">
-                                            Password
-                                        </label>
-                                        <input 
-                                            type="password" 
-                                            id="password" 
-                                            name="password" 
-                                            class="form-control rounded-4" 
-                                            required
-                                        />
-                                    </div>
+                                            <div class="mb-4">
+                                                <input 
+                                                    type="password" 
+                                                    id="password" 
+                                                    name="password" 
+                                                    class="form-control border-3 border-dark bg-light text-dark fw-semibold rounded-4" 
+                                                    placeholder="Password"
+                                                    required
+                                                />
+                                            </div>
 
-                                    <div class="mb-4">
-                                        <label for="confirm-password" class="form-label">
-                                            Confirm Password
-                                        </label>
-                                        <input 
-                                            type="password" 
-                                            id="confirm-password" 
-                                            name="confirm-password" 
-                                            class="form-control rounded-4" 
-                                            required
-                                        />
-                                    </div>
+                                            <div class="mb-4">
+                                                <input 
+                                                    type="password" 
+                                                    id="confirm-password" 
+                                                    name="confirm-password" 
+                                                    class="form-control border-3 border-dark bg-light text-dark fw-semibold rounded-4" 
+                                                    placeholder="Confirm Password"
+                                                    required
+                                                />
+                                            </div>
 
-                                    <div class="mb-4 text-center">
-                                        <button type="submit" class="btn btn-dark w-50">
-                                            Create Account
-                                        </button>
+                                            <div class="mb-2 text-center">
+                                                <button 
+                                                    type="submit" 
+                                                    class="btn fw-bold btn-dark w-100 w-md-75"
+                                                >
+                                                    Create Account
+                                                </button>
+                                            </div>
+                                        </form>
+                                        <p class="text-center fs-8 fs-md-6">
+                                            Already have an account? 
+                                            <a href="login.html" class="text-dark">
+                                                Login here
+                                            </a>
+                                        </p>
                                     </div>
-                                </form>
-                                <p class="text-center">
-                                    Already have an account? 
-                                    <a href="login.html" class="text-dark">
-                                        Login here
-                                    </a>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>
