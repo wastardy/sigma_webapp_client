@@ -14,18 +14,115 @@
         <link rel="stylesheet" href="../css/styles.css" />
         <link rel="icon" href="../assets/icons/logo_white.ico" />
         <title>Money Flow | Register</title>
-        <style>
-            body {
-                min-height: 200vh;
-            }
-        </style>
         <script defer src="../js/loadNavbar.js"></script>
         <script defer src="../js/navbar.js"></script>
         <script defer src="../js/loadFooter.js"></script>
         <script defer src="../js/script.js"></script>
     </head>
     <body>
-        <h1>Register html</h1>
+        <!-- Header -->
+        <header class="bg-primary p-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mt-7">
+                        <h1 class="fw-bold text-center text-light text-md-start mt-3">
+                            Registration
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="py-7 bg-gradient-register">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="card bg-primary text-light rounded-5 border-0 article-text">
+                        <div class="card-body p-5">
+                            <h2 class="text-center fw-bold">Create an Account</h2>
+                            <form action="#" method="POST">
+                                <div class="mb-4">
+                                    <label for="username" class="form-label">
+                                        Username
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="username" 
+                                        name="username" 
+                                        class="form-control rounded-4" 
+                                        required
+                                    />
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="firstname" class="form-label">
+                                        First Name
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="firstname" 
+                                        name="firstname" 
+                                        class="form-control rounded-4" 
+                                        required
+                                    />
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="lastname" class="form-label">
+                                        Last Name
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="lastname" 
+                                        name="lastname" 
+                                        class="form-control rounded-4" 
+                                        required
+                                    />
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="password" class="form-label">
+                                        Password
+                                    </label>
+                                    <input 
+                                        type="password" 
+                                        id="password" 
+                                        name="password" 
+                                        class="form-control rounded-4" 
+                                        required
+                                    />
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="confirm-password" class="form-label">
+                                        Confirm Password
+                                    </label>
+                                    <input 
+                                        type="password" 
+                                        id="confirm-password" 
+                                        name="confirm-password" 
+                                        class="form-control rounded-4" 
+                                        required
+                                    />
+                                </div>
+
+                                <div class="mb-4 text-center">
+                                    <button type="submit" class="btn btn-dark w-50">
+                                        Create Account
+                                    </button>
+                                </div>
+                            </form>
+                            <p class="text-center">
+                                Already have an account? 
+                                <a href="login.html" class="text-dark">
+                                    Login here
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <script src="../js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
